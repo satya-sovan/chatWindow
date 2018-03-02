@@ -1,0 +1,122 @@
+* {	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+}
+
+body {
+	background:#84bae6;
+}
+
+
+
+.chatBox{
+	width:500px;
+	height:600px;
+	background:#ffffff;
+	border:thin;
+	border-radius:10px;
+	margin:20px auto;
+	padding:25px;
+}
+
+
+.chatLogs{
+
+	width:450px;
+	height:470px;
+	margin:10px auto;
+	margin-top:10px;
+	padding:20px;
+	border-radius:10px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	order:-1;
+}
+.chatLogs::-webkit-scrollbar{
+	width:10px;
+}
+.chatLogs::-webkit-scrollbar-thumb{
+	border-radius:5px;
+	background: rgba(0,0,0,.1);
+}
+.chat{
+	display:flex;
+	flex-flow:row wrap;
+	align-items:flex-start;
+	padding-bottom:10px;
+}
+.chat .userPhoto{
+	border:thin solid #000000;
+	
+	width:70px;
+	height:30px;
+	
+	margin:auto 0;
+	font-size:16px;
+	font-family:Arial;
+	color:#ffffff;
+	font-weight:bold;
+}
+.friend .userPhoto{
+	border-radius:3px 50% 50% 3px;
+	background:#00697e;
+}
+.self .userPhoto{
+	border-radius:50% 3px 3px 50%;
+	text-align:right;
+	background:#00697e;
+}
+.userPhoto p{
+	padding:3px 3px;
+}
+.chat .userMessage{
+	border:thin solid #fee7cd;
+	border-radius:10px;
+	width:75%;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	background:#ffffff;
+	padding:8px;
+	margin:auto;
+}
+
+.self .userMessage{
+	background:#bafff1;
+	order:-1;
+}
+.friend .userMessage{
+	background:#c4ffc4;
+}
+.chatForm{
+	display:flex;
+	align-items:flex-start;
+	margin-top:20px;
+}
+.chatForm textarea {
+	background:#e4e4e4;
+	height:50px;
+	width:380px;
+	border:thin solid #000000;
+	border-radius:5px;
+	resize: none;
+	font-family:Arial;
+	font-size:20px;
+}
+.chatForm textarea:focus{
+	background:#ffffff;
+	
+}
+.chatForm input {
+	border:thin solid #000000;
+	border-radius:5px;
+	background:#00a125;
+	height:50px;
+	width:70px;
+	margin-left:10px;
+	font-size:20px;
+	font-family:Arial;
+	color:#ffffff;
+	font-weight:bold;
+	cursor: pointer;
+}
